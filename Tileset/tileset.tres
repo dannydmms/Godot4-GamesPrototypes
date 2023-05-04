@@ -1,0 +1,17 @@
+[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://c6hjflu8sufa4"]
+
+[ext_resource type="Texture2D" uid="uid://rhfhbmvvx8cq" path="res://Sprites/Wall.png" id="1_bcq2j"]
+[ext_resource type="Texture2D" uid="uid://csv33nck8bw8s" path="res://Sprites/Background.png" id="2_y4ks8"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s0kdo"]
+texture = ExtResource("1_bcq2j")
+0:0/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6t46m"]
+resource_name = "Floor"
+texture = ExtResource("2_y4ks8")
+0:0/0 = 0
+
+[resource]
+sources/1 = SubResource("TileSetAtlasSource_s0kdo")
+sources/2 = SubResource("TileSetAtlasSource_6t46m")

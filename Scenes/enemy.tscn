@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://njlneyumpl2w"]
+
+[ext_resource type="Texture2D" uid="uid://dbp1dh2ay7lfr" path="res://Sprites/Monster.png" id="1_k2ohk"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_qkfl7"]
+radius = 5.0
+height = 16.0
+
+[node name="Enemy" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_k2ohk")
+hframes = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 3)
+shape = SubResource("CapsuleShape2D_qkfl7")
