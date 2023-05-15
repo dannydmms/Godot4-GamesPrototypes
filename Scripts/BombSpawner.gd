@@ -7,8 +7,6 @@ var bomb_position : Node2D
 func _ready() -> void:
 	bomb_spawn = get_node("/root/MainGame")
 	bomb_position = get_node("/root/MainGame/Player/BombSpawner")
-	print(bomb_spawn.name)
-	print(bomb_position.name)
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:

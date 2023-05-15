@@ -112,7 +112,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_llics"]
 radius = 6.0
 
-[node name="StaticBody2D" type="StaticBody2D" node_paths=PackedStringArray("animation_bomb")]
+[node name="Bomb" type="StaticBody2D" node_paths=PackedStringArray("animation_bomb")]
 collision_layer = 16
 collision_mask = 22
 script = ExtResource("1_r8dhk")

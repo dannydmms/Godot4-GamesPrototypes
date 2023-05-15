@@ -1,0 +1,21 @@
+[gd_resource type="TileSet" load_steps=3 format=3 uid="uid://buxcxfyunvvdf"]
+
+[ext_resource type="Texture2D" uid="uid://m1w3muxp2xo0" path="res://Sprites/Atlas-Simples.png" id="1_6txep"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_7jo4q"]
+texture = ExtResource("1_6txep")
+0:0/0 = 0
+0:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0 = 0
+1:0/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+1:0/0/physics_layer_0/angular_velocity = 0.0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/linear_velocity = Vector2(0, 0)
+0:1/0/physics_layer_0/angular_velocity = 0.0
+
+[resource]
+physics_layer_0/collision_layer = 8
+physics_layer_0/collision_mask = 19
+sources/0 = SubResource("TileSetAtlasSource_7jo4q")

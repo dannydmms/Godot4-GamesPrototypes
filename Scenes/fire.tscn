@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://c06avusudg0vs"]
+
+[ext_resource type="Texture2D" uid="uid://pbdpboryck5f" path="res://icon.svg" id="1_d6rtw"]
+[ext_resource type="Script" path="res://Scripts/RayCast2D_Fire.gd" id="2_fp1qg"]
+
+[node name="Fire" type="Node2D"]
+
+[node name="RayCast2D_FireDown" type="RayCast2D" parent="."]
+target_position = Vector2(0, 20)
+collision_mask = 27
+script = ExtResource("2_fp1qg")
+
+[node name="Sprite2D" type="Sprite2D" parent="RayCast2D_FireDown"]
+position = Vector2(0, 10)
+scale = Vector2(0.046875, 0.140625)
+texture = ExtResource("1_d6rtw")
+
+[node name="RayCast2D_FireUp" type="RayCast2D" parent="."]
+target_position = Vector2(0, -20)
+collision_mask = 27
+script = ExtResource("2_fp1qg")
+
+[node name="Sprite2D" type="Sprite2D" parent="RayCast2D_FireUp"]
+position = Vector2(0, -10.5)
+scale = Vector2(0.046875, 0.148438)
+texture = ExtResource("1_d6rtw")
+
+[node name="RayCast2D_FireLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-20, 0)
+collision_mask = 27
+script = ExtResource("2_fp1qg")
+
+[node name="Sprite2D" type="Sprite2D" parent="RayCast2D_FireLeft"]
+position = Vector2(10.5, -1.19209e-07)
+scale = Vector2(0.148438, 0.046875)
+texture = ExtResource("1_d6rtw")
+
+[node name="RayCast2D_FireRight" type="RayCast2D" parent="."]
+target_position = Vector2(20, 0)
+collision_mask = 27
+script = ExtResource("2_fp1qg")
+
+[node name="Sprite2D" type="Sprite2D" parent="RayCast2D_FireRight"]
+position = Vector2(-11, 0)
+scale = Vector2(0.148438, 0.046875)
+texture = ExtResource("1_d6rtw")
